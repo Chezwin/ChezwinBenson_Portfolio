@@ -1,2 +1,2 @@
 Portfolio
-https://chez-sudo.github.io/ChezwinBenson_Portfolio/
+https://chezwin.github.io/ChezwinBenson_Portfolio/
