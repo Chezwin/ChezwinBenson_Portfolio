@@ -91,6 +91,7 @@
   }
 }
 
+
 .hero-design{
   padding: 1px 20px;
   margin-top: -288px;
@@ -135,6 +136,29 @@ body {
   border-radius: 10px;
 }
 
+.poster-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* columns auto-fit the space */
+  grid-template-rows: repeat(2, 1fr); /* exactly 2 rows */
+  gap: 20px;                           /* spacing between posters */
+  max-width: 1200px;                   /* optional max width */
+  margin: 0 auto;                      /* center container */
+}
+
+.poster {
+  width: 100%;
+  height: 300px;         /* fixed height for all posters */
+  overflow: hidden;
+  border-radius: 8px;    /* optional styling */
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* cover the box without stretching */
+}
+
+
 .small-image {
   width: 100%;
   height: auto;
@@ -147,12 +171,12 @@ body {
 }
 
 /* Abstand & Layout */
-.about-section {
+.ueber-mich-section {
   padding: 60px 0;
 }
 
 /* Bild */
-.about-section img {
+.ueber-mich-section img {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   width: 100%;
@@ -161,32 +185,89 @@ body {
 }
 
 /* Überschrift */
-.about-section h2 {
+.ueber-mich-section h2 {
   font-weight: 700;
   color: #22264b;
 }
 
 /* Text */
-.about-section p {
+.ueber-mich-section p {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
 }
 
 /* Button */
-.about-section .btn-custom {
-  background-color: #22264b;
-  color: #fff;
+.ueber-mich-section .btn-custom {
+  background-color: #f7a026;
+  color: #22264b;
   padding: 12px 28px;
   border-radius: 50px;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
-.about-section .btn-custom:hover {
+.ueber-mich-section .btn-custom:hover {
   background-color: #343a6e;
   transform: translateY(-2px);
 }
+
+/* ueber-mich SECTION */
+.ueber-mich-section img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.ueber-mich-section h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ueber-mich-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #6c757d;
+}
+
+/* Button Styling passend zu deinem Portfolio */
+.btn-custom {
+  background-color: #212529;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-custom:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+}
+
+/* Abstand nach oben und unten */
+.ueber-mich-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Responsive Fix: Text unter dem Bild bei kleinen Geräten */
+@media (max-width: 768px) {
+  .about-section h2 {
+      text-align: center;
+  }
+  .about-section p {
+      text-align: center;
+  }
+  .btn-custom {
+      display: block;
+      margin: 20px auto 0;
+  }
+}
+
 
 /* Responsive Optimierung */
 @media (max-width: 768px) {
@@ -197,6 +278,61 @@ body {
       margin-bottom: 20px;
   }
 }
+
+/* Bigger rectangular cards */
+.portfolio-card {
+  position: relative;
+  height: 380px;            /* make cards bigger */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row .g-2 {
+  position: absolute;
+  inset: 0;
+  background: #22264b;
+  transition: opacity 0.3s ease;
+}
+
+/* Blue filter overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, -48, 40, 0.55);
+  transition: opacity 0.3s ease;
+}
+
+/* Image fits perfectly */
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text overlay centered */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.overlay-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 18px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+
 
 
 hr {
@@ -1220,6 +1356,7 @@ progress {
   .col-md-7 {
     flex: 0 0 auto;
     width: 58.33333333%;
+    font-family: Montserat system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .col-md-8 {
     flex: 0 0 auto;
@@ -3720,9 +3857,10 @@ textarea.form-control-lg {
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
-  text-decoration: none;
+  text-decoration: #22264b;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -3778,7 +3916,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #ffc800;
+  --bs-nav-pills-link-active-bg: #f7a026;
 }
 .nav-pills .nav-link {
   background: none;
@@ -11019,6 +11157,7 @@ h2.portfolio-heading{
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #ffc800;
   text-decoration: underline;
+  scroll:var(--bs-accordion-btn-focus-border-color)
 }
 
 @media (min-width: 992px) {
@@ -11085,6 +11224,8 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -11104,7 +11245,7 @@ header.masthead .masthead-heading {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 3.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -11120,7 +11261,7 @@ header.masthead .masthead-heading {
   }
 }
 #portfolio .portfolio-item {
-  max-width: 26rem;
+  max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
 }
