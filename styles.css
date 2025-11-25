@@ -4089,6 +4089,26 @@ textarea.form-control-lg {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
 }
+/* Default (oben – transparent) */
+#mainNav .container {
+    background: transparent;
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Hintergrund ändern beim Scrollen */
+.scrolled #mainNav .container {
+    background: #00000080; /* 50% schwarzer overlay */
+}
+
+@media (min-width: 992px) {
+    #mainNav .container {
+        backdrop-filter: blur(10px);
+        border-radius: 64px;
+        padding: 20px 30px;
+        color: white;
+    }
+}
+
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
