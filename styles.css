@@ -11691,7 +11691,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 .masthead-subheading {
     font-size: 1.5rem;
-    color: #fff;
+    color: #22264b;
 }
 
 .hero-design {
@@ -11783,7 +11783,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 .masthead-heading {
     font-size: 3.2rem;   /* --- Smaller on desktop --- */
     font-weight: 700;
-    color: #fff;
+    color: #22264b;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
