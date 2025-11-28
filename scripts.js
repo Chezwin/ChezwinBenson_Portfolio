@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     <script>
-document.addEventListener("scroll", function () {
+    document.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
         document.body.classList.add("scrolled");
     } else {
@@ -72,6 +72,26 @@ document.addEventListener("scroll", function () {
     }
 });
 </script>
+
+<script>
+let lastScrollTop = 0;
+const navTexts = document.querySelectorAll('.nav-text');
+
+window.addEventListener("scroll", function() {
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (st > lastScrollTop) {
+        // Scrolling DOWN → yellow text
+        navTexts.forEach(t => t.style.color = "#FFD700"); 
+    } else {
+        // Scrolling UP → blue text
+        navTexts.forEach(t => t.style.color = "#00aaff");
+    }
+
+    lastScrollTop = st <= 0 ? 0 : st;
+});
+</script>
+
 
 
 });
