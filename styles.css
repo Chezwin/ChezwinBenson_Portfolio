@@ -11666,3 +11666,80 @@ flex-wrap: nowrap;
 animation: move 70s infinite linear; /* set the time to what you want of course */
 font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/* ============================
+   RESPONSIVE MASTHEAD HEADERS
+   ============================ */
+
+/* Default desktop styles */
+.masthead {
+    position: relative;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.masthead-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.hero-design {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
+/* ----- Tablet size ----- */
+@media (max-width: 992px) {
+    .masthead {
+        padding-top: 9rem;
+        padding-bottom: 6rem;
+    }
+
+    .masthead-heading {
+        font-size: 4rem;
+    }
+
+    .hero-design {
+        max-width: 700px;
+    }
+}
+
+/* ----- Mobile size ----- */
+@media (max-width: 768px) {
+    .masthead {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+
+    .masthead-heading {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-cta .btn {
+        padding: 0.9rem 1.6rem;
+        font-size: 1rem;
+    }
+
+    .hero-design {
+        max-width: 500px;
+    }
+}
+
+/* ----- Small mobile phones ----- */
+@media (max-width: 480px) {
+    .masthead-heading {
+        font-size: 2rem;
+    }
+
+    .hero-design {
+        max-width: 350px;
+    }
+}
+
