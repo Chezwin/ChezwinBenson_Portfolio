@@ -11097,7 +11097,7 @@ p {
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 3.5rem;
-  margin-top: 0;
+  margin-top: 32px;
   margin-bottom: 1rem;
   color: #f7a026;
 }
@@ -11873,13 +11873,13 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 /* Default text color = blue */
 .nav-text {
-    color: #00aaff !important;  /* blue */
+    color: #22264b !important;  /* blue */
     font-weight: 600;
 }
 
 /* Hover stays same color */
 .nav-text:hover {
-    color: inherit !important;
+    color: #f7a026 !important;
 }
 
 /* Masthead headers smaller */
@@ -11920,7 +11920,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
     margin-right: auto;
     border-radius: 22px;
     padding: 10px 25px;
-    background: rgba(0, 0, 0, 0.80);
+    background: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     transition: all 0.3s ease;
@@ -11934,7 +11934,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 /* Nav text default = blue */
 .nav-text {
-    color: #0094ff !important;
+    color: #22264b !important;
     font-weight: 600;
     transition: color 0.2s ease;
 }
