@@ -11824,12 +11824,12 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 /* NAVBAR TEXT ALWAYS YELLOW */
 #mainNav .nav-link,
 #mainNav .navbar-brand {
-    color: #f7a026 !important;
+    color: #22264b !important;
 }
 
 #mainNav .nav-link:hover,
 #mainNav .navbar-brand:hover {
-    color: #ffc45f !important;  /* lighter yellow on hover */
+    color: #f7a026 !important;  /* lighter yellow on hover */
 }
 
 /* Active link also yellow */
@@ -11972,6 +11972,68 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
         font-size: 0.9rem !important;
     }
 }
+
+/* --- Floating Rounded Dark Glassmorphism Navbar --- */
+.custom-nav {
+    margin-top: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 22px;
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Override Bootstrap grey navbar */
+.navbar {
+    background: transparent !important;
+}
+
+/* Nav text default = blue */
+.nav-text {
+    color: #22264b !important;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+/* No hover color change */
+.nav-text:hover {
+    color: #f7a026 !important;
+}
+
+/* Masthead headers smaller and responsive */
+.masthead-heading {
+    font-size: 3.5rem !important;
+}
+
+.masthead-subheading {
+    font-size: 1.3rem !important;
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .masthead-heading {
+        font-size: 2.8rem !important;
+    }
+    .masthead-subheading {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+    .masthead-heading {
+        font-size: 1.8rem !important;
+    }
+    .masthead-subheading {
+        font-size: 0.9rem !important;
+    }
+}
+
 
 
 
