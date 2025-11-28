@@ -95,3 +95,23 @@ window.addEventListener("scroll", function() {
 
 
 });
+
+<script>
+let lastScrollTop = 0;
+const navTexts = document.querySelectorAll('.nav-text');
+
+window.addEventListener("scroll", function() {
+    let st = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (st > lastScrollTop) {
+        // scroll DOWN
+        navTexts.forEach(t => t.style.color = "#FFD700"); 
+    } else {
+        // scroll UP
+        navTexts.forEach(t => t.style.color = "#0094ff");
+    }
+
+    lastScrollTop = st <= 0 ? 0 : st;
+});
+</script>
+
