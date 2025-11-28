@@ -11852,5 +11852,66 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
     background: transparent !important;
 }
 
+/* --- Floating Rounded Dark Glassmorphism Navbar --- */
+.custom-nav {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.45); /* dark opacity */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+}
+
+/* No ugly Bootstrap gray background */
+.navbar {
+    background: transparent !important;
+}
+
+/* Default text color = blue */
+.nav-text {
+    color: #00aaff !important;  /* blue */
+    font-weight: 600;
+}
+
+/* Hover stays same color */
+.nav-text:hover {
+    color: inherit !important;
+}
+
+/* Masthead headers smaller */
+.masthead-heading {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Responsive smaller sizes */
+@media (max-width: 992px) {
+    .masthead-heading {
+        font-size: 3rem;
+    }
+    .masthead-subheading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .masthead-heading {
+        font-size: 2.2rem;
+    }
+    .masthead-subheading {
+        font-size: 1rem;
+    }
+}
+
+
 
 
