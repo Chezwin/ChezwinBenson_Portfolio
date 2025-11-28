@@ -11668,22 +11668,30 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 }
 
 /* ============================
-   RESPONSIVE MASTHEAD HEADERS
+   MASTHEAD BASE STYLES
    ============================ */
 
-/* Default desktop styles */
 .masthead {
     position: relative;
-    padding-top: 12rem;
-    padding-bottom: 8rem;
     text-align: center;
+    padding: 10rem 0 6rem 0;
+    background-color: #22264b;      /* Blue background */
+    background-size: cover;         /* Fix background stretching */
+    background-position: center;    /* Keep centered */
+    background-repeat: no-repeat;
 }
 
+/* Text — desktop */
 .masthead-heading {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
     letter-spacing: 2px;
+}
+
+.masthead-subheading {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .hero-design {
@@ -11694,52 +11702,79 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
     margin: 0 auto 2rem auto;
 }
 
-/* ----- Tablet size ----- */
+
+
+/* ============================
+   TABLET
+   ============================ */
 @media (max-width: 992px) {
+
     .masthead {
-        padding-top: 9rem;
-        padding-bottom: 6rem;
+        padding: 7rem 0 4rem 0;
+        background-size: contain;      /* Fix background clipping */
     }
 
     .masthead-heading {
-        font-size: 4rem;
+        font-size: 3.5rem;
+    }
+
+    .masthead-subheading {
+        font-size: 1.2rem;
     }
 
     .hero-design {
-        max-width: 700px;
+        max-width: 650px;
     }
 }
 
-/* ----- Mobile size ----- */
+
+
+/* ============================
+   MOBILE
+   ============================ */
 @media (max-width: 768px) {
+
     .masthead {
-        padding-top: 7rem;
-        padding-bottom: 4rem;
+        padding: 5rem 0 3rem 0;
+        background-size: contain;    /* Ensures full visibility */
     }
 
     .masthead-heading {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         line-height: 1.2;
     }
 
-    .hero-cta .btn {
-        padding: 0.9rem 1.6rem;
+    .masthead-subheading {
         font-size: 1rem;
     }
 
     .hero-design {
-        max-width: 500px;
+        max-width: 450px;
     }
 }
 
-/* ----- Small mobile phones ----- */
+
+
+/* ============================
+   SMALL MOBILE
+   ============================ */
 @media (max-width: 480px) {
+
+    .masthead {
+        padding: 4rem 0 2rem 0;
+    }
+
     .masthead-heading {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .masthead-subheading {
+        font-size: 0.9rem;
     }
 
     .hero-design {
-        max-width: 350px;
+        max-width: 300px;
     }
 }
+
 
