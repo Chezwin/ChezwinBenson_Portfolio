@@ -11884,19 +11884,19 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 /* Masthead headers smaller */
 .masthead-heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 
 .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 
 /* Responsive smaller sizes */
 @media (max-width: 992px) {
     .masthead-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .masthead-subheading {
         font-size: 1.2rem;
@@ -11905,10 +11905,10 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 @media (max-width: 576px) {
     .masthead-heading {
-        font-size: 2.2rem;
+        font-size: 3.5rem;
     }
     .masthead-subheading {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -11920,7 +11920,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
     margin-right: auto;
     border-radius: 22px;
     padding: 10px 25px;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.80);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     transition: all 0.3s ease;
