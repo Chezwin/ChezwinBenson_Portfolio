@@ -11171,7 +11171,7 @@ h2.portfolio-heading{
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #22264b;
+  color: #f7a026;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11941,7 +11941,7 @@ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto
 
 /* No hover color change */
 .nav-text:hover {
-    color: inherit !important;
+    color: #f7a026 !important;
 }
 
 /* Masthead headers smaller and responsive */
