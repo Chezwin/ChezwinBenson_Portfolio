@@ -63,67 +63,15 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    <script>
-    document.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-        document.body.classList.add("scrolled");
-    } else {
-        document.body.classList.remove("scrolled");
-    }
-});
-</script>
-
-<script>
-let lastScrollTop = 0;
-const navTexts = document.querySelectorAll('.nav-text');
-
-window.addEventListener("scroll", function() {
-    let st = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (st > lastScrollTop) {
-        // Scrolling DOWN → yellow text
-        navTexts.forEach(t => t.style.color = "#FFD700"); 
-    } else {
-        // Scrolling UP → blue text
-        navTexts.forEach(t => t.style.color = "#00aaff");
-    }
-
-    lastScrollTop = st <= 0 ? 0 : st;
-});
-</script>
-
-
+        // Listen for scroll events
+    window.addEventListener('scroll', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        if (window.scrollY > 50) { // Change 50 to whatever scroll threshold you want
+        navLinks.forEach(link => link.classList.add('scrolled'));
+        } else {
+        navLinks.forEach(link => link.classList.remove('scrolled'));
+        }
+    });
+  
 
 });
-
-<script>
-let lastScrollTop = 0;
-const navTexts = document.querySelectorAll('.nav-text');
-
-window.addEventListener("scroll", function() {
-    let st = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (st > lastScrollTop) {
-        // scroll DOWN
-        navTexts.forEach(t => t.style.color = "#FFD700"); 
-    } else {
-        // scroll UP
-        navTexts.forEach(t => t.style.color = "#0094ff");
-    }
-
-    lastScrollTop = st <= 0 ? 0 : st;
-});
-</script>
-
-<script>
-document.addEventListener("scroll", function () {
-    const nav = document.querySelector("body");
-    if (window.scrollY > 10) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
-    }
-});
-</script>
-
-
