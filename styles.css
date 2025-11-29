@@ -95,7 +95,7 @@
 .hero-design{
   padding: 1px 20px;
   margin-top: -288px;
-  margin-bottom: -29px;
+  margin-bottom: -393px;
   position: relative;
   z-index: 2;
 }
@@ -4089,26 +4089,6 @@ textarea.form-control-lg {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
 }
-/* Default (oben – transparent) */
-#mainNav .container {
-    background: transparent;
-    transition: background 0.3s ease, backdrop-filter 0.3s ease;
-}
-
-/* Hintergrund ändern beim Scrollen */
-.scrolled #mainNav .container {
-    background: #00000080; /* 50% schwarzer overlay */
-}
-
-@media (min-width: 992px) {
-    #mainNav .container {
-        backdrop-filter: blur(10px);
-        border-radius: 64px;
-        padding: 20px 30px;
-        color: white;
-    }
-}
-
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -11097,7 +11077,7 @@ p {
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 3.5rem;
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 1rem;
   color: #f7a026;
 }
@@ -11114,7 +11094,7 @@ h2.portfolio-heading{
 }
 
 .h2.section-heading, .page-section .section-heading.h2 {
-  color: #22264b;
+  color: #fff;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -11171,7 +11151,7 @@ h2.portfolio-heading{
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #f7a026;
+  color: #22264b;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11254,7 +11234,7 @@ header.masthead .masthead-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 5rem;
@@ -11268,13 +11248,13 @@ header.masthead .masthead-heading {
     padding-bottom: 3.5rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
@@ -11666,9 +11646,3 @@ flex-wrap: nowrap;
 animation: move 70s infinite linear; /* set the time to what you want of course */
 font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-
-
-
-
-
