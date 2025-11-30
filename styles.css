@@ -11191,7 +11191,7 @@ h2.portfolio-heading{
     backdrop-filter: blur(10px);
     border-radius: 64px;
     padding: 20px 30px;
-    color: white;
+    background-color: #00276680;
   }
   #mainNav.navbar-shrink {
     display: flex;
