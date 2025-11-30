@@ -9518,7 +9518,7 @@ textarea.form-control-lg {
     gap: 3rem !important;
   }
   .text-md-start {
-    text-align: left !important;
+    text-align: center !important;
   }
   .text-md-end {
     text-align: right !important;
@@ -11179,7 +11179,7 @@ h2.portfolio-heading{
   }
 
   .navbar-scroll {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 45);
     text-decoration-color: #f7a026;
   }
 
