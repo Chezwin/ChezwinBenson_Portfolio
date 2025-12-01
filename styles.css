@@ -11186,7 +11186,7 @@ h2.portfolio-heading{
 
 /* Default: transparent container with blur */
 #mainNav .container {
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(10px);
     background-color: #102d865c; /* transparent at top */
     border-radius: 64px;
     padding: 20px 30px;
