@@ -11184,7 +11184,7 @@ h2.portfolio-heading{
 }
 
 
-/* Normal state */
+/* Default: transparent container with blur */
 #mainNav .container {
     backdrop-filter: blur(0px);
     background-color: transparent;
