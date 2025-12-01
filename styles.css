@@ -11179,7 +11179,7 @@ h2.portfolio-heading{
   }
 
   .navbar-scroll {
-    background-color: rgba(0, 0, 0, 45);
+    background-color: rgba(0, 0, 0, 0.5);
     text-decoration-color: #f7a026;
   }
 
@@ -11191,7 +11191,7 @@ h2.portfolio-heading{
     backdrop-filter: blur(10px);
     border-radius: 64px;
     padding: 20px 30px;
-    background-color: #00276680;
+    color: #fff;
   }
   #mainNav.navbar-shrink {
     display: flex;
