@@ -4056,7 +4056,8 @@ textarea.form-control-lg {
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: var(--bs-navbar-color);
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.25);
+;
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
@@ -11178,21 +11179,25 @@ h2.portfolio-heading{
     transition: height 0.3s ease-in-out;
   }
 
-  .navbar-scroll {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration-color: #f7a026;
-  }
+  #mainNav.scrolled .container {
+    background-color: rgba(0, 0, 0, 0.45); /* ← visible background on scroll */
+}
+
 
   #mainNav {
-    transition: all 1s ease-in-out
-  }
+    transition: background-color 0.4s ease;
+}
 
-  #mainNav .container {
+
+ #mainNav .container {
     backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0); /* ← transparent */
     border-radius: 64px;
     padding: 20px 30px;
+    transition: background-color 0.4s ease; /* smooth fade */
     color: #fff;
-  }
+}
+
   #mainNav.navbar-shrink {
     display: flex;
     justify-content: center;
