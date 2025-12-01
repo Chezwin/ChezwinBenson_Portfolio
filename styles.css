@@ -11157,7 +11157,7 @@ h2.portfolio-heading{
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #f7a026;
   text-decoration: underline;
   scroll:var(--bs-accordion-btn-focus-border-color)
 }
@@ -11201,7 +11201,8 @@ h2.portfolio-heading{
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(41, 57, 153, 0.25); /* your color */
+    backdrop-filter: blur(10px);
+    background-color: #102d865c; /* transparent at top */
     border-radius: 64px;
     z-index: -1; /* behind the text */
     
