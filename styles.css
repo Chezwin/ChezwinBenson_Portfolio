@@ -11179,24 +11179,26 @@ h2.portfolio-heading{
     transition: height 0.3s ease-in-out;
   }
 
-  #mainNav.scrolled .container {
-    background-color: rgba(0, 0, 0, 0.45); /* ← visible background on scroll */
-}
-
-
   #mainNav {
     transition: background-color 0.4s ease;
 }
 
 
- #mainNav .container {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0); /* ← transparent */
+/* Normal state */
+#mainNav .container {
+    backdrop-filter: blur(0px);
+    background-color: transparent;
     border-radius: 64px;
     padding: 20px 30px;
-    transition: background-color 0.4s ease; /* smooth fade */
-    color: #fff;
+    transition: all 0.5s ease;
 }
+
+/* When scrolled */
+#mainNav.scrolled .container {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
 
   #mainNav.navbar-shrink {
     display: flex;
