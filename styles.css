@@ -11186,19 +11186,31 @@ h2.portfolio-heading{
 
 /* Default: transparent container with blur */
 #mainNav .container {
-    backdrop-filter: blur(10px);
-    background-color: transparent;
+    backdrop-filter: blur(0px);
+    background-color: rgba(0,0,0,0); /* transparent at top */
     border-radius: 64px;
     padding: 20px 30px;
-    transition: all 0.5s ease;
+    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+    z-index: 10;
+    position: relative;
 }
 
+
 /* When scrolled */
-#mainNav.scrolled .container {
-    backdrop-filter: blur(10px);
-    background-color: #0f3f8f87;
-    transition: background-color 0.4s ease;
+#mainNav.scrolled .container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(41, 57, 153, 0.25); /* your color */
+    border-radius: 64px;
+    z-index: -1; /* behind the text */
+    
 }
+
+  #mainNav.scrolled .container {
+    backdrop-filter: blur(10px);
+}
+
 
 
   #mainNav.navbar-shrink {
